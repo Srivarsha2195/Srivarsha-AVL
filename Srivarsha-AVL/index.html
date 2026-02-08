@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL Tree Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AVL Tree Visualizer</h1>
+            <p class="subtitle">Self-Balancing Binary Search Tree</p>
+        </header>
+
+        <div class="controls">
+            <div class="input-group">
+                <input type="number" id="nodeValue" placeholder="Enter value" autofocus>
+                <button id="insertBtn" class="btn btn-primary">Insert</button>
+                <button id="clearBtn" class="btn btn-secondary">Clear Tree</button>
+            </div>
+            <div class="info">
+                <span id="nodeCount">Nodes: 0</span>
+                <span id="treeHeight">Height: 0</span>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="treeCanvas"></canvas>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="color-box balanced"></span>
+                <span>Balanced Node</span>
+            </div>
+            <div class="legend-item">
+                <span class="color-box">BF: Balance Factor</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
